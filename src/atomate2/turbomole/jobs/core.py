@@ -13,6 +13,7 @@ from atomate2.turbomole.schemas.task import DefineTaskDocument
 from atomate2.turbomole.sets.core import (
     BaseTurbomoleInputGenerator,
     TurbomoleDefineInputGenerator,
+    TurbomoleInputGenerator,
 )
 from jobflow import Maker, Response, job
 from monty.os import cd, makedirs_p
@@ -147,7 +148,7 @@ class DscfMaker(BaseTurbomoleMaker):
     """Base maker for dscf jobs."""
 
     input_set_generator: BaseTurbomoleInputGenerator = field(
-        default_factory=BaseTurbomoleInputGenerator
+        default_factory=TurbomoleInputGenerator
     )
     tm_exec: str = "dscf"
     name: str = "dscf"
@@ -162,7 +163,7 @@ class RidftMaker(BaseTurbomoleMaker):
     """Base maker for ridft jobs."""
 
     input_set_generator: BaseTurbomoleInputGenerator = field(
-        default_factory=BaseTurbomoleInputGenerator
+        default_factory=TurbomoleInputGenerator
     )
     tm_exec: str = "ridft"
     name: str = "ridft"
@@ -177,7 +178,7 @@ class RiperMaker(BaseTurbomoleMaker):
     """Base maker for riper jobs."""
 
     input_set_generator: BaseTurbomoleInputGenerator = field(
-        default_factory=BaseTurbomoleInputGenerator
+        default_factory=TurbomoleInputGenerator
     )
     tm_exec: str = "riper"
     name: str = "riper"
@@ -192,7 +193,7 @@ class JobexMaker(BaseTurbomoleMaker):
     """Base maker for jobex jobs."""
 
     input_set_generator: BaseTurbomoleInputGenerator = field(
-        default_factory=BaseTurbomoleInputGenerator
+        default_factory=TurbomoleInputGenerator
     )
     tm_exec: str = "jobex"
     name: str = "jobex"

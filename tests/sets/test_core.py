@@ -4,9 +4,9 @@ import numpy as np
 import pytest
 from atomate2.turbomole.sets.base import DefineInputSet, TurbomoleInputSet
 from atomate2.turbomole.sets.core import (
-    BaseTurbomoleInputGenerator,
     DscfInputGenerator,
     TurbomoleDefineInputGenerator,
+    TurbomoleInputGenerator,
 )
 from monty.tempfile import ScratchDir
 from pymatgen.core import Lattice, Molecule, Structure
@@ -131,7 +131,7 @@ def test_define_explicit_insertion() -> None:
 
 
 def test_turbomole_inp_gen() -> None:
-    turbomol_inp_gen = BaseTurbomoleInputGenerator()
+    turbomol_inp_gen = TurbomoleInputGenerator()
     assert isinstance(turbomol_inp_gen.get_input_set(), TurbomoleInputSet)
 
 
