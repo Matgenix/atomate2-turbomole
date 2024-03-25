@@ -1,0 +1,6 @@
+user: testuser
+password: testpassword
+host: somehost
+port: 12345
+database: results
+collection: projectA_results

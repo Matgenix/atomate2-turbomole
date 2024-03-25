@@ -1,0 +1,83 @@
+$redund_inp
+    metric 3
+$coord    file=coord
+$title
+ridft
+$symmetry c1
+$redundant    file=coord
+$user-defined bonds    file=coord
+$intdef    file=coord
+$optimize
+ internal   on
+ redundant  on
+ cartesian  off
+ global     off
+ basis      off
+$atoms
+    basis =def2-SVP
+    cbas  =def2-SVP
+    jbas  =def2-SVP
+$basis    file=basis
+$scfmo   file=mos
+$closed shells
+ a       1-5                                    ( 2 )
+$scfiterlimit     5000
+$scfconv        7
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=0.300  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor    500 MiB  per_core
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$denconv     0.10000000E-06
+$freeze
+ implicit core=    1 virt=    0
+$cbas    file=auxbasis
+$ricc2
+  mp2
+  geoopt model=mp2       state=(x)
+$rundimensions
+   natoms=3
+   nbf(CAO)=25
+   nbf(AO)=24
+$last step     ricc2
+$rij
+$jbas file=auxbasis
+$last SCF energy change = 0.21230237E-06
+$charge from ridft
+         -0.000 (not to be modified here)
+$dipole from ricc2
+  x     0.00000000000000    y     0.00000000000002    z    -0.83734347176641    a.u.
+   | dipole | =    2.1283308989  debye
+$last MP2 energy change= -.17529487E-06
+$optinfo       file=optinfo
+$hessapprox   file=hessapprox
+$orbital_max_rnorm 0.11128957352062E-05
+$subenergy  Etot         E1                  Ej                Ex                 En
+-75.95365063830    -122.2173137736     0.000000000000     0.000000000000     8.741810048584
+$end

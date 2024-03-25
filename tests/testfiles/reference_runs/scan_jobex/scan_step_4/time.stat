@@ -1,0 +1,102 @@
+scf_energy
+ ridft ended normally
+
+real	0m0.102s
+user	0m0.055s
+sys	0m0.022s
+
+gradient
+ ricc2 ended normally
+
+real	0m0.091s
+user	0m0.063s
+sys	0m0.026s
+
+statpt
+  statpt ended normally
+
+real	0m0.016s
+user	0m0.009s
+sys	0m0.006s
+
+scf_energy
+ ridft ended normally
+
+real	0m0.055s
+user	0m0.039s
+sys	0m0.015s
+
+gradient
+ ricc2 ended normally
+
+real	0m0.093s
+user	0m0.054s
+sys	0m0.036s
+
+
+statpt
+  statpt ended normally
+
+real	0m0.018s
+user	0m0.010s
+sys	0m0.004s
+
+scf_energy
+ ridft ended normally
+
+real	0m0.059s
+user	0m0.040s
+sys	0m0.017s
+
+gradient
+ ricc2 ended normally
+
+real	0m0.094s
+user	0m0.068s
+sys	0m0.023s
+
+
+statpt
+  statpt ended normally
+
+real	0m0.014s
+user	0m0.009s
+sys	0m0.004s
+
+scf_energy
+ ridft ended normally
+
+real	0m0.049s
+user	0m0.031s
+sys	0m0.017s
+
+gradient
+ ricc2 ended normally
+
+real	0m0.091s
+user	0m0.061s
+sys	0m0.027s
+
+
+statpt
+  statpt ended normally
+
+real	0m0.016s
+user	0m0.010s
+sys	0m0.006s
+
+scf_energy
+ ridft ended normally
+
+real	0m0.038s
+user	0m0.027s
+sys	0m0.010s
+
+gradient
+ ricc2 ended normally
+
+real	0m0.093s
+user	0m0.062s
+sys	0m0.028s
+
+

@@ -1,0 +1,19 @@
+[
+    {
+        "job": {
+            "@module": "nagare.custodian_jobs",
+            "@class": "Riper",
+            "@version": "0.3.0a2",
+            "output_file": "riper.out",
+            "stderr_file": "riper.err",
+            "options": []
+        },
+        "corrections": [],
+        "handler": null,
+        "validator": null,
+        "max_errors": false,
+        "max_errors_per_job": false,
+        "max_errors_per_handler": false,
+        "nonzero_return_code": false
+    }
+]

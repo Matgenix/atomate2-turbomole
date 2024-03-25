@@ -1,0 +1,6 @@
+$scfmo   expanded   format(4d20.14)
+# molecular orbitals of project :
+#  --->  dscf  <---
+     1  a      eigenvalue=-.65510421008642D+00   nsaos=4
+0.30939327223786D+000.26376996982359D+000.30939327223786D+000.26376996982359D+00
+$end

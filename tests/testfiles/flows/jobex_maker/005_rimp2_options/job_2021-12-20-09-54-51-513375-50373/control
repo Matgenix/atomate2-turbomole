@@ -1,0 +1,84 @@
+$redund_inp
+    metric 3
+$coord    file=coord
+$title
+H2
+$symmetry c1
+$user-defined bonds    file=coord
+$optimize
+ internal   off
+ redundant  off
+ cartesian  on
+ global     off
+ basis      off
+$atoms
+h  1-2                                                                         \
+   basis =h def2-SVP                                                           \
+   cbas  =h def2-SVP                                                           \
+   jkbas =h def2-SVP
+$basis    file=basis
+$scfmo   file=mos
+$closed shells
+ a       1                                      ( 2 )
+$scfiterlimit     2000
+$scfconv        7
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=0.300  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor    500 MiB  per_core
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$denconv     0.10000000E-06
+$freeze
+ implicit core=    0 virt=    0
+$cbas    file=auxbasis
+$ricc2
+  mp2
+  geoopt model=mp2       state=(x)
+$ricore      500
+$rij
+$jkbas    file=auxbasis
+$rik
+$rundimensions
+   natoms=2
+   nbf(CAO)=10
+   nbf(AO)=10
+$last step     ricc2
+$last SCF energy change = 0.65773644E-07
+$charge from ridft
+         -0.000 (not to be modified here)
+$dipole from ricc2
+  x    -0.00000000000000    y    -0.00000000000000    z     0.00000000000001    a.u.
+   | dipole | =    0.0000000000  debye
+$last MP2 energy change= -.73160079E-07
+$optinfo       file=optinfo
+$hessapprox   file=hessapprox
+$orbital_max_rnorm 0.36147338372487E-06
+$subenergy  Etot         E1                  Ej                Ex                 En
+-1.128926982575    -2.486539200953     1.309237662634    -.6546188313171    0.7029933870606
+$end

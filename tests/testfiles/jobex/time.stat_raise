@@ -1,0 +1,21 @@
+scf_energy
+
+real	2h31m26.272s
+user	124h12m0.261s
+sys	0m0.009s
+
+statpt
+  statpt ended normally
+  should give an error while parsing
+
+real	0m0.015s
+user	0m0.013s
+sys	38h0m0.002s
+
+scf_energy
+
+real	1h04m0.256s
+user	2h0m0.246s
+sys	0m0.008s
+
+

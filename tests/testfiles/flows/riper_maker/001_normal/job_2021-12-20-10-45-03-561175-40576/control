@@ -1,0 +1,79 @@
+$redund_inp
+    metric 3
+$coord    file=coord
+$title
+ridft
+$symmetry c1
+$user-defined bonds    file=coord
+$optimize
+ internal   off
+ redundant  off
+ cartesian  on
+ global     off
+ basis      off
+$atoms
+si 1-2                                                                         \
+   basis =si def-SV(P)                                                         \
+   jbas  =si def-SV(P)
+$basis    file=basis
+$scfmo    file=mos
+$closed shells
+ a       1-14                                   ( 2 )
+$scfiterlimit      200
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=0.300  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor    500 MiB  per_core
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$scfconv   7
+$ricore      500
+$rij
+$jbas    file=auxbasis
+$rundimensions
+   natoms=2
+   nbf(CAO)=38
+   nbf(AO)=36
+$last step     riper
+$dft
+   functional b-p
+   gridsize   m3
+$periodic 1
+$cell
+  7.307523019370594
+$kpoints
+  nkpoints 2
+$riper
+  sigma 0.01
+$optcell
+$last SCF energy change = -578.75320
+$gradlatt
+  cycle =      1    energy =     -578.7531970853 |dE/dlatt| =  0.008887
+   0.73075230193706D+01
+      0.88872292692353D-02
+$end

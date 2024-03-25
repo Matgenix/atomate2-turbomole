@@ -1,0 +1,24 @@
+CONVERGENCY CRITERIA FULFILLED IN CYCLE 3
+
+ energy change  : actual value =  -0.6754E-06 threshold =   0.1000E-05
+ geom. gradient : actual value =   0.1770E-05 threshold =   0.1000E-02
+
+Job ended at   Mon 20 Dec 15:36:02 CET 2021
+  on machine     fedora
+  by user        davidwaroquiers
+  in directory   /home/davidwaroquiers/Documents/Matgenix/Projects/2021/2021_02_Toyota_KMH1/Technical/NagareTests/flows/ScanMaker/004_relaxed_scan_ridft/run/job_2021-12-20-14-36-01-976318-16254
+  
+job.start file had been created with details about the job type: 
+
+Mon 20 Dec 15:36:02 CET 2021
+jobex WAS CALLED AS: jobex -ri -time
+AN OPTIMIZATION WITH MAX. 100 CYCLES WILL BE PERFORMED
+CONVERGENCY CRITERION FOR TOTAL SCF-ENERGY IS 10**(-6)
+CONVERGENCY CRITERION FOR MAXIMUM NORM OF SCF-ENERGY GRADIENT IS 10**(-3)
+CONVERGENCY CRITERION FOR MAXIMUM NORM OF BASIS SET GRADIENT IS 10**(-3)
+PROCEDURE WILL START WITH A dscf like STEP
+LOAD MODULES WILL BE TAKEN FROM DIRECTORY /home/davidwaroquiers/Softwares/Turbomole/evaluation_license/turbolinux751-tmg/bin/em64t-unknown-linux-gnu
+DSCF  = /home/davidwaroquiers/Softwares/Turbomole/evaluation_license/turbolinux751-tmg/bin/em64t-unknown-linux-gnu/ridft
+GRAD  = /home/davidwaroquiers/Softwares/Turbomole/evaluation_license/turbolinux751-tmg/bin/em64t-unknown-linux-gnu/rdgrad
+STATPT = /home/davidwaroquiers/Softwares/Turbomole/evaluation_license/turbolinux751-tmg/bin/em64t-unknown-linux-gnu/statpt
+

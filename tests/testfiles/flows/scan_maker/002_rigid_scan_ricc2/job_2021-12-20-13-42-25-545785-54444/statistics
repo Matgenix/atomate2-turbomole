@@ -1,0 +1,130 @@
+Mon 20 Dec 14:42:25 CET 2021
+
+ STATISTICS OUTPUT FOR PROJECT :
+   --->  ridft_rimp2  <---
+
+ integral neglect threshold       :  0.83E-09
+ integral storage threshold THIZE :  0.10E-04
+ integral storage threshold THIME :         5
+
+
+ --------------------    1.ITERATION  --------------------
+ norm of density matrix                :   0.524027209014    
+ total energy                          : -1.0601213309263    
+ one-electron energy                   : -2.4656355320383    
+ two-electron energy                   : 0.57867480907604    
+ damping factor ttr                    :           0.3000    
+
+ --------------------    2.ITERATION  --------------------
+ RMS (maximum over irreps) of difference density =0.493535D-01
+ 
+  weight factors dlin for linear combination of density matrices :
+   1.0589924    
+ accerr=   2.121  crierr=1000.000  ilam=  0  grange= 0.0      chatol=   0.603
+
+ norm of difference density matrix     :   0.167374093393    
+ norm of simple difference density     :   0.170204996350    
+ norm of density matrix                :   0.579632161041    
+ total energy                          : -1.0994348259596    
+ one-electron energy                   : -2.5577930008951    
+ two-electron energy                   : 0.63151878289953    
+ energy increment                      :          -0.3931E-01
+ damping factor ttr                    :           0.2500    
+
+ --------------------    3.ITERATION  --------------------
+ RMS (maximum over irreps) of difference density =0.390790D-01
+ 
+  weight factors dlin for linear combination of density matrices :
+   1.1041075       1.7641565    
+ accerr=   3.352  crierr=1000.000  ilam=  0  grange= 0.0      chatol=   0.439
+
+ norm of difference density matrix     :   0.267581481865E-01
+ norm of simple difference density     :   0.132790538907    
+ norm of density matrix                :   0.650123316024    
+ total energy                          : -1.1124864817968    
+ one-electron energy                   : -2.6105499312431    
+ two-electron energy                   : 0.67122405741037    
+ energy increment                      :          -0.1305E-01
+ damping factor ttr                    :           0.1000    
+
+ --------------------    4.ITERATION  --------------------
+ RMS (maximum over irreps) of difference density =0.167502D-01
+ 
+  weight factors dlin for linear combination of density matrices :
+   1.1226829       2.0786441       1.6485532    
+ accerr=   4.356  crierr=1000.000  ilam=  0  grange= 0.0      chatol=   0.383
+
+ norm of difference density matrix     :   0.239428755656E-13
+ norm of simple difference density     :   0.562723565858E-01
+ norm of density matrix                :   0.684911859766    
+ total energy                          : -1.1139390096279    
+ one-electron energy                   : -2.6280751076190    
+ two-electron energy                   : 0.68729670595516    
+ energy increment                      :          -0.1453E-02
+ damping factor ttr                    :           0.1000    
+
+ --------------------    5.ITERATION  --------------------
+ RMS (maximum over irreps) of difference density =0.237265D-02
+ 
+  weight factors dlin for linear combination of density matrices :
+   1.1252732       2.1224917       1.7497842      0.51973869    
+ accerr=   4.534  crierr=1000.000  ilam=  0  grange= 0.0      chatol=   0.377
+
+ norm of difference density matrix     :   0.202748762429E-14
+ norm of simple difference density     :   0.793977452239E-02
+ norm of density matrix                :   0.690007255150    
+ total energy                          : -1.1139659013493    
+ one-electron energy                   : -2.6303276635496    
+ two-electron energy                   : 0.68952237016442    
+ energy increment                      :          -0.2689E-04
+ damping factor ttr                    :           0.1000    
+
+ --------------------    6.ITERATION  --------------------
+ RMS (maximum over irreps) of difference density =0.277517D-03
+ 
+  weight factors dlin for linear combination of density matrices :
+   1.1255755       2.1276088       1.7617701      0.63297531       1.0883264    
+ accerr=   4.738  crierr=1000.000  ilam=  0  grange= 0.0      chatol=   0.369
+
+ norm of difference density matrix     :   0.902318045252E-15
+ norm of simple difference density     :   0.928177477501E-03
+ norm of density matrix                :   0.690605719462    
+ total energy                          : -1.1139662623212    
+ one-electron energy                   : -2.6305875072316    
+ two-electron energy                   : 0.68978185287451    
+ energy increment                      :          -0.3610E-06
+ damping factor ttr                    :           0.1000    
+
+ --------------------    7.ITERATION  --------------------
+ RMS (maximum over irreps) of difference density =0.304685D-04
+ 
+  weight factors dlin for linear combination of density matrices :
+   1.1256087       2.1281705       1.7630879      0.82773468     -0.32127874    
+  -3.4143935    
+ accerr=   6.219  crierr=1000.000  ilam=  0  grange= 0.0      chatol=   0.332
+
+ norm of difference density matrix     :   0.156170557171E-15
+ norm of simple difference density     :   0.101898060071E-03
+ norm of density matrix                :   0.690671456001    
+ total energy                          : -1.1139662666230    
+ one-electron energy                   : -2.6306159893164    
+ two-electron energy                   : 0.68981033065745    
+ energy increment                      :          -0.4302E-08
+ damping factor ttr                    :           0.1000    
+
+ --------------------    8.ITERATION  --------------------
+ RMS (maximum over irreps) of difference density =0.317268D-05
+ 
+  weight factors dlin for linear combination of density matrices :
+   1.1256121       2.1282290       1.7632252       1.5238160      -1.5596643    
+  -3.5576295       5.2797612    
+ accerr=   9.995  crierr=  10.000  ilam= 27  grange=-.36E-31  chatol=   0.286
+
+ norm of difference density matrix     :   0.686222853534E-15
+ norm of simple difference density     :   0.106105734457E-04
+ norm of density matrix                :   0.690678301499    
+ total energy                          : -1.1139662666694    
+ one-electron energy                   : -2.6306189546309    
+ two-electron energy                   : 0.68981329592557    
+ energy increment                      :          -0.4637E-10
+ damping factor ttr                    :           0.1000    

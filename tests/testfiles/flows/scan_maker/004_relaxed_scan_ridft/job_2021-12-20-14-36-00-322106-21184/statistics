@@ -1,0 +1,46 @@
+Mon 20 Dec 15:36:01 CET 2021
+
+ STATISTICS OUTPUT FOR PROJECT :
+   --->  ridft  <---
+
+ integral neglect threshold       :  0.18E-09
+ integral storage threshold THIZE :  0.10E-04
+ integral storage threshold THIME :         5
+
+
+ --------------------    1.ITERATION  --------------------
+ norm of density matrix                :    3.00516228420    
+ total energy                          : -76.337118205172    
+ one-electron energy                   : -121.44932988539    
+ two-electron energy                   :  36.784010550684    
+ damping factor ttr                    :           0.3000    
+
+ --------------------    2.ITERATION  --------------------
+ 
+  weight factors dlin for linear combination of density matrices :
+   1.0000025    
+ accerr=   2.000  crierr=1000.000  ilam=  0  grange= 0.0      chatol=   0.634
+
+ norm of difference density matrix     :   0.762096419814E-04
+ norm of simple difference density     :   0.765817051813E-04
+ norm of density matrix                :    3.00516982488    
+ total energy                          : -76.337118204742    
+ one-electron energy                   : -121.44973250563    
+ two-electron energy                   :  36.784413171358    
+ energy increment                      :           0.4305E-09
+ damping factor ttr                    :           0.3000    
+
+ --------------------    3.ITERATION  --------------------
+ 
+  weight factors dlin for linear combination of density matrices :
+   1.0000017      0.59407406    
+ accerr=   2.142  crierr=  10.000  ilam=  0  grange= 0.0      chatol=   0.599
+
+ norm of difference density matrix     :   0.297958270326E-05
+ norm of simple difference density     :   0.311765047913E-04
+ norm of density matrix                :    3.00516735558    
+ total energy                          : -76.337375688223    
+ one-electron energy                   : -121.44957300397    
+ two-electron energy                   :  36.783996186214    
+ energy increment                      :          -0.9445E-09
+ damping factor ttr                    :           0.3500    

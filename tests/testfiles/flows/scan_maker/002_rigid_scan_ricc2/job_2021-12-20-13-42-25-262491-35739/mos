@@ -1,0 +1,6 @@
+$scfmo   expanded   format(4d20.14)
+# molecular orbitals of project :
+#  --->  ridft_rimp2  <---
+     1  a      eigenvalue=-.64942855857042D+00   nsaos=4
+0.31389406340054D+000.26760707184128D+000.31389406340054D+000.26760707184128D+00
+$end

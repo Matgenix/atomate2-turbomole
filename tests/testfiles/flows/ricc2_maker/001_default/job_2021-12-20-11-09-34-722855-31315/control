@@ -1,0 +1,91 @@
+$redund_inp
+    metric 3
+$coord    file=coord
+$title
+ridft_rimp2
+$symmetry c1
+$user-defined bonds    file=coord
+$optimize
+ internal   off
+ redundant  off
+ cartesian  on
+ global     off
+ basis      off
+$atoms
+mn 1                                                                           \
+   basis =mn def-SV(P)                                                         \
+   cbas  =mn def-SV(P)                                                         \
+   jkbas =mn def-SV(P)
+h  2-3                                                                         \
+   basis =h def-SV(P)                                                          \
+   cbas  =h def-SV(P)                                                          \
+   jkbas =h def-SV(P)
+$basis    file=basis
+$uhfmo_alpha   file=alpha
+$uhfmo_beta   file=beta
+$uhf
+$alpha shells
+ a       1-15                                   ( 1 )
+$beta shells
+ a       1-11                                   ( 1 )
+$scfiterlimit      200
+$scfconv        7
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=1.000  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor    500 MiB  per_core
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$denconv     0.10000000E-06
+$freeze
+ implicit core=    6 virt=    0
+$cbas    file=auxbasis
+$ricc2
+  mp2
+  geoopt model=mp2       state=(x)
+$ricore      500
+$rij
+$jkbas    file=auxbasis
+$rik
+$rundimensions
+   natoms=3
+   nbf(CAO)=30
+   nbf(AO)=28
+$last step     ridft
+$orbital_max_rnorm 0.46629368257065E-05
+$last SCF energy change = -1150.4262
+$subenergy  Etot         E1                  Ej                Ex                 En
+-1150.426224115    -1609.078717195     494.1993905102    -51.44449523552     15.89759780485
+$ssquare from ridft
+          6.705 (not to be modified here)
+$charge from ridft
+          1.000 (not to be modified here)
+$dipole from ridft
+  x    -0.00000000000000    y    -0.00000013257667    z     0.19654721348101    a.u.
+   | dipole | =    0.4995769617  debye
+$end

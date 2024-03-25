@@ -1,0 +1,616 @@
+
+OPTIMIZATION CYCLE 20
+Mon 20 Dec 11:03:33 CET 2021
+
+ statpt (fedora) : TURBOMOLE rev. V7.5.1 compiled 23 Dec 2020 at 11:32:14
+ Copyright (C) 2020 TURBOMOLE GmbH, Karlsruhe
+
+
+    2021-12-20 11:03:33.671 
+
+
+
+                           this is S T A T P T   
+
+
+                     hessian and coordinate update for
+                          stationary point search 
+
+                     by barbara unterreiner, marek sierka,
+                           and reinhart ahlrichs
+
+                          quantum chemistry group
+                          universitaet  karlsruhe
+                                  germany
+
+
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+          2.83674229    0.88793304    1.44966697    si    14.000     0
+          6.40073411    0.11206696   -0.44966697    si    14.000     0
+ 
+       center of nuclear mass  :    4.61873820    0.50000000    0.50000000
+       center of nuclear charge:    4.61873820    0.50000000    0.50000000
+
+
+              +--------------------------------------------------+
+              | Periodic system found: PBC structure information |
+              +--------------------------------------------------+
+
+                           Cell parameters (au,deg.)
+   +-------------------------------------------------------------------------
+   |      |a|                                                                |
+   +-------------------------------------------------------------------------
+       7.12797620
+   +-------------------------------------------------------------------------
+
+       Shortest interatomic distance (bohr):           4.1123
+
+       Periodicity in 1 dimensions
+
+       Direct space cell vectors (au):
+               a      7.12797620      0.00000000      0.00000000
+
+       Reciprocal space cell vectors (au):
+               a      0.88148236     -0.00000000     -0.00000000
+
+              +--------------------------------------------------+
+              |        Fractional crystal coordinates            |
+              +--------------------------------------------------+
+
+                atom            fractional coordinates
+                  si    0.39797303    0.88793304    1.44966697
+                  si    0.89797355    0.11206696   -0.44966697
+  Keyword $statpt not found - using default options
+ 
+        ***************  Stationary point options ******************
+        ************************************************************
+           Maximum allowed trust radius:           3.000000E-01
+           Minimum allowed trust radius:           1.000000E-03
+           Initial trust radius:                   1.500000E-01
+           GDIIS used if gradient norm <           1.000000E-02
+           Number of previous steps for GDIIS:       5
+           Hessian update method:                  BFGS
+                        *** Convergence criteria ***                
+           Threshold for energy change:            1.000000E-06
+           Threshold for max displacement element: 1.000000E-03
+           Threshold for max gradient element :    1.000000E-03
+           Threshold for RMS of displacement:      5.000000E-04
+           Threshold for RMS of gradient:          5.000000E-04
+        ************************************************************
+ 
+
+  Keyword $statp missing in file <control>
+
+  Keyword $statpt not found - using default options
+  *************************************************************************
+   ATOM                      CARTESIAN COORDINATES
+    1 si      2.83674228694336      1.13375398197197      2.77654772120981
+    2 si     -0.72724209577187      0.35788790811972      0.87721378847549
+  *************************************************************************
+   ATOM                      CARTESIAN GRADIENTS  
+    1 si     -0.00000045516507     -0.00001323033011     -0.00002210230154
+    2 si      0.00000045516507      0.00001323033011      0.00002210230154
+  *************************************************************************
+
+  norm of actual CARTESIAN gradient:  3.64352E-05
+
+  ENERGY =    -578.8551176923 a.u.; # of cycle =   20
+
+  Approximate Hessian read from $hessapprox data section
+
+  Hessian updated according to BFGS formula
+  Number of zero Hessian eigenvalues:   3
+
+        ***************  Trust radius update info  *****************
+                Actual energy change:       -1.76200E-07
+                Predicted energy change:    -7.67125E-08
+                Actual step radius:          2.02559E-03
+                Actual trust radius:         0.059112
+                Energy change ratio:         2.296889
+                New trust radius:            0.059112
+        ************************************************************
+
+  Final step radius: 9.98611E-04
+
+      ****************************************************************** 
+                          CONVERGENCE INFORMATION
+
+                               Converged?     Value      Criterion
+             Energy change         yes      0.0000002   0.0000010
+             RMS of displacement   yes      0.0002578   0.0005000
+             RMS of gradient       yes      0.0000097   0.0005000
+             MAX displacement      yes      0.0007958   0.0010000
+             MAX gradient          yes      0.0000221   0.0010000
+      ****************************************************************** 
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :   0.02 seconds
+         total wall-time :   0.02 seconds
+    ------------------------------------------------------------------------
+
+   ****  statpt : all done  ****
+
+
+    2021-12-20 11:03:33.681 
+
+fine, there is no data group "$actual step"
+next step = riper
+
+ WARNING : length of argument string 
+/home/davidwaroquiers/Softwares/Turbomole/evaluation_license/turbolinux751-tmg/bin/em64t-unknown-linux-gnu
+ exceeds   80 characters 
+ argument will be ignored!
+
+
+ riper (fedora) : TURBOMOLE rev. V7.5.1 compiled 23 Dec 2020 at 11:32:14
+ Copyright (C) 2020 TURBOMOLE GmbH, Karlsruhe
+
+
+    2021-12-20 11:03:33.699 
+
+ Number of MKL threads:      1
+
+   *************************************************************************
+   ridft                                                                    
+   *************************************************************************
+
+
+    
+    *************************************************************************
+    *************************************************************************
+    ***            _            _                   _     _               ***
+    ***           | |_ _  _ _ _| |__  ___ _ __  ___| |___( )___           ***
+    ***           |  _| || | '_| '_ \/ _ \ '  \/ _ \ / -_)/(_-<           ***
+    ***            \__|\_,_|_| |_.__/\___/_|_|_\___/_\___| /__/           ***
+    ***                      ___   ___                                    ***
+    ***             //   ) )    / /    //   ) ) //   / /  //   ) )        ***
+    ***            //___/ /    / /    //___/ / //____    //___/ /         ***
+    ***           / ___ (     / /    / ____ / / ____    / ___ (           ***
+    ***          //   | |    / /    //       //        //   | |           ***
+    ***         //    | | __/ /___ //       //____/ / //    | |           ***
+    ***                                                                   ***
+    *************************************************************************
+    *************************************************************************
+    *************************** PROGRAM RIPER *******************************
+    ****** Density Functional Theory with periodic boundary conditions ******
+    ******                                                             ******
+    ****** Developed by the groups in Jena   (M. Sierka)               ******
+    ******                        and Munich (A. Burow)                ******
+    *************************************************************************
+    
+    
+                               References:                                  
+    
+    (1) General implementation:                                             
+        R. Lazarski, A. M. Burow, M. Sierka                                 
+        Density Functional Theory for Molecular and Periodic Systems Using  
+        Density Fitting and Continuous Fast Multipole Methods               
+        J. Chem. Theory Comput. 2015, 11, 3029-3041                         
+        R. Lazarski, A. M. Burow, L. Grajciar, M. Sierka                    
+        Density Functional Theory for Molecular and Periodic Systems Using  
+        Density Fitting and Continuous Fast Multipole Methods: Analytical   
+        Gradients                                                           
+        J. Comput. Chem. 2016, 57, 2518–2526                                
+    (2) DFT implementation:                                                 
+        A. M. Burow, M. Sierka                                              
+        Linear Scaling Hierarchical Integration Scheme For the              
+        Exchange-Correlation Term in Molecular and Periodic Systems         
+        J. Chem. Theory Comput. 2011, 7, 3097-3104                          
+    (3) RI/DF approximation:                                                
+        A. M. Burow, M. Sierka, F. Mohamed                                  
+        Resolution of Identity Approximation for the Coulomb Term in        
+        Molecular and Periodic Systems                                      
+        J. Chem. Phys. 2009, 131, 214101/1-214101/6                         
+    (4) Low-Memory Iterative Density Fitting (LMIDF) method:                
+        L. Grajciar                                                         
+        Low-Memory Iterative Density Fitting                                
+        J. Comput. Chem. 2015, 36, 1521-1535                                
+    
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+          2.83654058    0.88808825    1.45000924    si    14.000     0
+          6.40013996    0.11191175   -0.45000924    si    14.000     0
+ 
+       center of nuclear mass  :    4.61834027    0.50000000    0.50000000
+       center of nuclear charge:    4.61834027    0.50000000    0.50000000
+
+
+              +--------------------------------------------------+
+              | Periodic system found: PBC structure information |
+              +--------------------------------------------------+
+
+                           Cell parameters (au,deg.)
+   +-------------------------------------------------------------------------
+   |      |a|                                                                |
+   +-------------------------------------------------------------------------
+       7.12718036
+   +-------------------------------------------------------------------------
+
+       Shortest interatomic distance (bohr):           4.1124
+
+       Periodicity in 1 dimensions
+
+       Direct space cell vectors (au):
+               a      7.12718036      0.00000000      0.00000000
+
+       Reciprocal space cell vectors (au):
+               a      0.88158079     -0.00000000     -0.00000000
+
+              +--------------------------------------------------+
+              |        Fractional crystal coordinates            |
+              +--------------------------------------------------+
+
+                atom            fractional coordinates
+                  si    0.39798917    0.88808825    1.45000924
+                  si    0.89799046    0.11191175   -0.45000924
+
+   * BASIS SET information:
+
+              +--------------------------------------------------+
+              |               basis set information              |
+              +--------------------------------------------------+
+
+              we will work with the 1s 3p 5d 7f 9g ... basis set
+              ...i.e. with spherical basis functions...
+
+   type   atoms  prim   cont   basis
+   ---------------------------------------------------------------------------
+    si       2     36     18   def-SV(P)   [4s3p1d|10s7p1d]
+   ---------------------------------------------------------------------------
+   total:    2     72     36
+   ---------------------------------------------------------------------------
+
+   total number of primitive shells          :   18
+   total number of contracted shells         :   16
+   total number of cartesian basis functions :   38
+   total number of SCF-basis functions       :   36
+
+
+   * AUXILIARY RI-J BASIS SET information:
+
+              +--------------------------------------------------+
+              |               basis set information              |
+              +--------------------------------------------------+
+
+              we will work with the 1s 3p 5d 7f 9g ... basis set
+              ...i.e. with spherical basis functions...
+
+   type   atoms  prim   cont   basis
+   ---------------------------------------------------------------------------
+    si       2     71     40   def-SV(P)   [5s3p2d1f1g|12s6p5d1f1g]
+   ---------------------------------------------------------------------------
+   total:    2    142     80
+   ---------------------------------------------------------------------------
+
+   total number of primitive shells          :   25
+   total number of contracted shells         :   24
+   total number of cartesian basis functions :  102
+   total number of SCF-basis functions       :   80
+
+               
+              +--------------------------------------------------+
+              |                 K-POINT MESH                     |
+              +--------------------------------------------------+
+               
+       Total number of k points used for density integration:      2
+       Number of symmetry distinct k points used:                  1
+
+       Reciprocal space cell vector (au):
+               a      0.88158079     -0.00000000     -0.00000000
+       Number of k-points along this vector:     2
+       Fractional coordinates:
+         -0.2500   0.2500
+               
+              +--------------------------------------------------+
+              |       Summary of SCF and related options         |
+              +--------------------------------------------------+
+               
+       Energy and gradient calculation 
+       Calculation of gradients with respect to cell parameters 
+       Translation/rotation projected out of the gradient vector 
+       Diagonalization of overlap matrices 
+       Threshold for neglect of eigenvalues of overlap matrices:   0.1000E-05
+       Diagonalization method set to:                                2
+       Maximum number of SCF iterations included in the DIIS:        4
+       Automatic orbital shift for HOMO-LUMO gap below:           0.1000E+00
+
+       Fractional occupation numbers with Gaussian smearing 
+         width of the smearing:                                   0.1000E-01
+               
+              +--------------------------------------------------+
+              |      SCREENING OF BASIS FUNCTION PRODUCTS        |
+              +--------------------------------------------------+
+               
+         Threshold for shell products neglect:          0.9E-11
+         Tolerance for shell products extents:          0.1E-07
+         The biggest integral is expected to be:        0.3E+01
+         Number of {mu,nu,L} shell products:                534
+         Number of direct lattice vectors:                    8
+        
+               
+              +--------------------------------------------------+
+              |             INITIAL ORBITALS/BANDS               |
+              +--------------------------------------------------+
+               
+  Bands restarted from             RIPER.BANDS
+  Bands occupations restarted from RIPER.BANDS.OCCUPATIONS
+  Bands energies restarted from    RIPER.BANDS.ENERGIES
+
+  Diagonalization of the overlap matrix requested 
+    Threshold for eigenvalues:    0.1000E-05
+    Total number of vectors:          36
+    Largest eigenvalue:          0.4013E+01
+    - for the k-point:                2
+    Smallest eigenvalue:         0.5066E-02
+    - for the k-point:                2
+    Largest number of vectors:       36
+    - for the k-point:                1
+    Smallest number of vectors:      36
+    - for the k-point:                1
+
+  BANDS have been orthonormalized
+               
+              +--------------------------------------------------+
+              |           DENSITY FUNCTIONAL THEORY              |
+              +--------------------------------------------------+
+               
+       DFT calculation will be performed
+        
+ B-P86 functional
+ exchange:    LDA + Becke (B88)
+ correlation: LDA (VWN) + Perdew (P86)
+               
+              +--------------------------------------------------+
+              |              NUMERICAL INTEGRATION               |
+              +--------------------------------------------------+
+               
+       Will use smaller grid during SCF iterations and a grid
+       of size 3 for the last iteration.
+        
+       Integration of exchange-correlation term is performed with
+       Stratmann/Scuseria renormalization.
+       Specified sharpness parameter is .64000D+00.
+       Calculation of weight derivatives is switched OFF
+       Maximum number of grid points per atom:             7148
+       Total number of grid points of the system:          13364
+               
+              +--------------------------------------------------+
+              |        CONTINUOUS FAST MULTIPOLE METHOD          |
+              +--------------------------------------------------+
+               
+   Continuous Fast Multipole Method for the Coulomb term
+     order of multipole expansions:         20
+     well-separateness criterion:         3.0000
+     local multipole expansions switched on
+     local expansions incremented by:        2
+     total number of centers:              560
+     number of octree levels:                4
+     number of boxes at all levels:         16
+     max. number of NF boxes per box:        9
+     length of the lowest level box:     15.1352
+     length of the highest level box:   121.0816
+ 
+   Periodic boundary conditions - crystal field construction:
+     extent of the nuclei:              2.8365
+     extent of electron density:       26.2527
+     extent of auxiliary density:      13.3550
+     final crystal field radius:       67.6527
+     number of lattice vectors:           19
+ 
+   RI core memory information
+     core memory allocated for RI integrals:           3 MB
+     maximum memory needed for RI integrals:           3 MB
+ 
+         ------------------ Fractional Occupations ----------------
+           Fermi level           =             -0.1813527157
+           Electrons(/UC)        =             28.0000000000
+           Current HOMO-LUMO gap =     0.15893E-01
+         ----------------------------------------------------------
+               
+              +--------------------------------------------------+
+              |                SCF iteration    1                |
+              +--------------------------------------------------+
+  
+          Number of electrons from P*S  =    28.00000000000001
+           
+          Numerical integration of the XC term:
+          Number of electrons          =    27.99997623425374
+           
+         ------------------ Fractional Occupations ----------------
+           Fermi level           =             -0.1813569220
+           Electrons(/UC)        =             28.0000000000
+           Current HOMO-LUMO gap =     0.15872E-01
+         ----------------------------------------------------------
+          SCF energy change             = -5.789D+02
+          Free energy change            = -5.789D+02
+          new damping factor            =      0.300
+  
+              +--------------------------------------------------+
+              | KINETIC ENERGY       =         576.9455052693    |
+              | COULOMB ENERGY       =       -1113.9868240159    |
+              | EXCH. & CORR. ENERGY =         -41.8137989451    |
+              |==================================================|
+              | TOTAL ENERGY         =        -578.8551176917    |
+              | T*S                  =          -0.0000000327    |
+              | FREE  ENERGY         =        -578.8551177244    |
+              | ENERGY (sigma->0)    =        -578.8551177081    |
+              +--------------------------------------------------+
+  
+               
+              +--------------------------------------------------+
+              |                SCF iteration    2                |
+              +--------------------------------------------------+
+  
+          Number of electrons from P*S  =    27.99999999999999
+           
+          Numerical integration of the XC term:
+          Number of electrons          =    27.99997623431822
+           
+          Norm of current diis error    =  6.205D-04
+         ------------------ Fractional Occupations ----------------
+           Fermi level           =             -0.1813577752
+           Electrons(/UC)        =             28.0000000000
+           Current HOMO-LUMO gap =     0.15868E-01
+         ----------------------------------------------------------
+          RMS of difference density     =  2.712D-06
+          SCF energy change             =  5.704D-08
+          Free energy change            =  5.671D-08
+          new damping factor            =      0.350
+  
+              +--------------------------------------------------+
+              | KINETIC ENERGY       =         576.9454682693    |
+              | COULOMB ENERGY       =       -1113.9867908227    |
+              | EXCH. & CORR. ENERGY =         -41.8137950813    |
+              |==================================================|
+              | TOTAL ENERGY         =        -578.8551176347    |
+              | T*S                  =          -0.0000000330    |
+              | FREE  ENERGY         =        -578.8551176677    |
+              | ENERGY (sigma->0)    =        -578.8551176512    |
+              +--------------------------------------------------+
+  
+               
+              +--------------------------------------------------+
+              |       SCF converged - final SCF iteration        |
+              +--------------------------------------------------+
+  
+          Number of electrons from P*S  =    27.99999999999998
+           
+          Numerical integration of the XC term:
+          Number of electrons          =    27.99997623432637
+           
+  
+              SCF converged within      2 cycles.
+  
+              +--------------------------------------------------+
+              |                FINAL ENERGIES                    |
+              +--------------------------------------------------+
+              | KINETIC ENERGY       =         576.9454616276    |
+              | COULOMB ENERGY       =       -1113.9867852426    |
+              | EXCH. & CORR. ENERGY =         -41.8137940903    |
+              |==================================================|
+              | TOTAL ENERGY         =        -578.8551177054    |
+              | T*S                  =          -0.0000000331    |
+              | FREE  ENERGY         =        -578.8551177384    |
+              | ENERGY (sigma->0)    =        -578.8551177219    |
+              +--------------------------------------------------+
+  
+  
+         ------------------ Fermi Level Statistics ----------------
+             Lowest unoccupied band =       -0.129797
+             Highest occupied band  =       -0.145665
+             Band gap               =        0.015868
+             Band gap middle        =       -0.137731
+             Fermi level            =       -0.181358
+         ----------------------------------------------------------
+
+ orbitals $scfmo  will be written to file mos
+
+     Translation projected out of the gradient vector
+
+  --------------------------------------------- 
+       stress tensor, raw: 
+       in the order xx,xy,yy,xz,yz,zz,yx,zx,zy
+        -5.499423792354463E-005
+        -1.603057781696901E-006
+        -9.351963486656234E-006
+        -3.924158463080290E-006
+        -2.289286467954676E-005
+        -7.752172362995857E-005
+        -1.660126854624257E-006
+        -4.065516016097160E-006
+        -3.166839699503265E-005
+  --------------------------------------------- 
+   ***  cartesian gradients written onto <gradient>  ***
+
+    ------------------------------------------------------------------------
+    RIPER profiling                cpu                    wall         ratio
+    ------------------------------------------------------------------------
+    module                         sec     %               sec     %
+    ------------------------------------------------------------------------
+    RIPER                         1.0  100.00            1.0  100.00   1.0
+    Preliminaries                 0.0    1.43            0.0    1.44   1.0
+    preescrening                  0.0    0.14            0.0    0.14   1.0
+    BANDS init                    0.0    0.14            0.0    0.15   0.9
+    DFT grid setup                0.0    2.48            0.0    2.48   1.0
+    DFT system grid               0.0    2.22            0.0    2.21   1.0
+    DFT octree                    0.0    0.19            0.0    0.19   1.0
+    CFMM preliminaries            0.1    8.00            0.1    7.99   1.0
+    PQ matrix                     0.0    1.78            0.0    1.78   1.0
+    PQ CNF                        0.0    0.10            0.0    0.10   1.0
+    PQ CFF                        0.0    1.67            0.0    1.67   1.0
+    SCF                           0.5   47.25            0.5   47.29   1.0
+    nuclear energy                0.0    0.14            0.0    0.14   1.0
+    jmat nuclear                  0.0    0.66            0.0    0.65   1.0
+    SCF looop                     0.5   45.84            0.5   45.83   1.0
+    XC matrix                     0.3   27.65            0.3   27.63   1.0
+    Coulomb total                 0.2   17.86            0.2   17.83   1.0
+    gamma vector                  0.1   10.66            0.1   10.64   1.0
+    gamma CFF                     0.0    2.04            0.0    2.04   1.0
+    gamma CNF FF                  0.0    3.30            0.0    3.30   1.0
+    gamma CNF FF mom              0.0    2.01            0.0    2.01   1.0
+    gamma CNF FF p. 1             0.0    0.19            0.0    0.19   1.0
+    gamma CNF FF p. 2             0.0    0.81            0.0    0.81   1.0
+    gamma CNF NF                  0.1    5.31            0.1    5.30   1.0
+    gamma CNF NF p. 1             0.0    4.57            0.0    4.56   1.0
+    gamma CNF NF p. 2             0.0    0.74            0.0    0.74   1.0
+    Coulomb matrix                0.1    7.19            0.1    7.18   1.0
+    jmat CFF                      0.0    2.18            0.0    2.18   1.0
+    jmat CNF FF                   0.0    3.13            0.0    3.12   1.0
+    jmat CNF FF mom               0.0    0.22            0.0    0.22   1.0
+    jmat CNF FF p. 2              0.0    0.81            0.0    0.81   1.0
+    jmat CNF FF p. 3              0.0    0.14            0.0    0.14   1.0
+    jmat CNF NF                   0.0    0.31            0.0    0.31   1.0
+    elec. en. aux                 0.0    1.56            0.0    1.56   1.0
+    SCF solve                     0.0    0.12            0.0    0.11   1.0
+    MO dump                       0.0    0.17            0.0    0.22   0.8
+    mos dump                      0.0    0.35            0.0    0.38   0.9
+    Gradient                      0.4   38.83            0.4   38.79   1.0
+    grad XC                       0.1    9.75            0.1    9.74   1.0
+    grad weights                  0.1    6.79            0.1    6.78   1.0
+    grad Coulomb                  0.2   21.93            0.2   21.90   1.0
+    grad CFF                      0.0    3.08            0.0    3.08   1.0
+    CFF dauxaux                   0.0    0.15            0.0    0.14   1.0
+    CFF drho                      0.0    2.28            0.0    2.28   1.0
+    grad FF CNF                   0.1    7.14            0.1    7.13   1.0
+    CNF FF dnuc                   0.0    0.94            0.0    0.94   1.0
+    CNF FF daux                   0.0    1.09            0.0    1.09   1.0
+    CNF FF drho                   0.0    2.74            0.0    2.74   1.0
+    grad NF CNF                   0.1   11.72            0.1   11.70   1.0
+    CNF NF drhoaux                0.1    8.61            0.1    8.60   1.0
+    CNF NF dauxaux                0.0    0.71            0.0    0.71   1.0
+    CNF NF drhonuc                0.0    2.39            0.0    2.39   1.0
+    ------------------------------------------------------------------------
+    sum                           4.2  422.06            4.2  421.91   1.0
+    ------------------------------------------------------------------------
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :   1.00 seconds
+         total wall-time :   1.00 seconds
+    ------------------------------------------------------------------------
+
+   ****  riper : all done  ****
+
+
+    2021-12-20 11:03:34.693 
+
+fine, there is no data group "$actual step"
+script actual: unknown actual step riper
+next step = unknown
+ energy change  : actual value =  -0.1762E-06 threshold =   0.1000E-05
+ geom. gradient : actual value =   0.2210E-04 threshold =   0.1000E-02
+
+CONVERGENCY CRITERIA FULFILLED IN CYCLE 20
+

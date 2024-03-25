@@ -1,0 +1,76 @@
+$redund_inp
+    metric 3
+$coord    file=coord
+$title
+ridft
+$symmetry c1
+$user-defined bonds    file=coord
+$optimize
+ internal   off
+ redundant  off
+ cartesian  on
+ global     off
+ basis      off
+$atoms
+h  1-2                                                                         \
+   basis =h def2-SVP                                                           \
+   jbas  =h def2-SVP
+$basis    file=basis
+$scfmo   file=mos
+$closed shells
+ a       1                                      ( 2 )
+$scfiterlimit     5000
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=0.300  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor    500 MiB  per_core
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$scfconv   7
+$ricore      500
+$rij
+$jbas    file=auxbasis
+$rundimensions
+   natoms=2
+   nbf(CAO)=10
+   nbf(AO)=10
+$last step     ridft
+$disp3
+$dft
+   functional pbe
+   gridsize   m3
+$orbital_max_rnorm 0.18797471848628E-03
+$last SCF energy change = -1.1601628
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En                 Disp
+-1.160162803965    -2.503207728517     1.318586173084    -.6456120332027    -.4503354365558E-010.7151043390581    -.1073164003248E-07
+$charge from ridft
+          0.000 (not to be modified here)
+$dipole from ridft
+  x     0.00000000000000    y     0.00000000000000    z    -0.00000000000001    a.u.
+   | dipole | =    0.0000000000  debye
+$end

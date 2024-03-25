@@ -1,0 +1,91 @@
+Mon 20 Dec 13:42:29 CET 2021
+
+ STATISTICS OUTPUT FOR PROJECT :
+   --->  ridft  <---
+
+ integral neglect threshold       :  0.83E-09
+ integral storage threshold THIZE :  0.10E-04
+ integral storage threshold THIME :         5
+
+
+ --------------------    1.ITERATION  --------------------
+ norm of density matrix                :   0.531520992143    
+ total energy                          : -1.1196018395478    
+ one-electron energy                   : -2.4178169239897    
+ two-electron energy                   : 0.53129159037952    
+ damping factor ttr                    :           0.3000    
+
+ --------------------    2.ITERATION  --------------------
+ 
+  weight factors dlin for linear combination of density matrices :
+   1.0713123    
+ accerr=   2.148  crierr=1000.000  ilam=  0  grange= 0.0      chatol=   0.597
+
+ norm of difference density matrix     :   0.197518876587    
+ norm of simple difference density     :   0.201122896057    
+ norm of density matrix                :   0.602709316906    
+ total energy                          : -1.1577721659746    
+ one-electron energy                   : -2.5144121926635    
+ two-electron energy                   : 0.58971653262652    
+ energy increment                      :          -0.3817E-01
+ damping factor ttr                    :           0.2500    
+
+ --------------------    3.ITERATION  --------------------
+ 
+  weight factors dlin for linear combination of density matrices :
+   1.1097712       1.5406644    
+ accerr=   3.078  crierr=1000.000  ilam=  0  grange= 0.0      chatol=   0.461
+
+ norm of difference density matrix     :   0.222729498225E-01
+ norm of simple difference density     :   0.110988095085    
+ norm of density matrix                :   0.664111096345    
+ total energy                          : -1.1647848156349    
+ one-electron energy                   : -2.5521680798407    
+ two-electron energy                   : 0.62045977014345    
+ energy increment                      :          -0.7013E-02
+ damping factor ttr                    :           0.1000    
+
+ --------------------    4.ITERATION  --------------------
+ 
+  weight factors dlin for linear combination of density matrices :
+   1.1209207       1.6975749       1.4128317    
+ accerr=   3.709  crierr=1000.000  ilam=  0  grange= 0.0      chatol=   0.415
+
+ norm of difference density matrix     :   0.724842168476E-15
+ norm of simple difference density     :   0.328666992932E-01
+ norm of density matrix                :   0.684388457015    
+ total energy                          : -1.1651937191986    
+ one-electron energy                   : -2.5613513214763    
+ two-electron energy                   : 0.62923410821545    
+ energy increment                      :          -0.4089E-03
+ damping factor ttr                    :           0.1000    
+
+ --------------------    5.ITERATION  --------------------
+ 
+  weight factors dlin for linear combination of density matrices :
+   1.1218879       1.7111896       1.4512078      -1.0530269    
+ accerr=   3.942  crierr=1000.000  ilam=  0  grange= 0.0      chatol=   0.402
+
+ norm of difference density matrix     :   0.663601333541E-15
+ norm of simple difference density     :   0.286817668451E-02
+ norm of density matrix                :   0.686196403758    
+ total energy                          : -1.1651956942459    
+ one-electron energy                   : -2.5621111429168    
+ two-electron energy                   : 0.62999195460859    
+ energy increment                      :          -0.1975E-05
+ damping factor ttr                    :           0.1000    
+
+ --------------------    6.ITERATION  --------------------
+ 
+  weight factors dlin for linear combination of density matrices :
+   1.1219716       1.7123676       1.4545476     -0.31112160      0.25095407    
+ accerr=   3.782  crierr=  10.000  ilam=  0  grange= 0.0      chatol=   0.411
+
+ norm of difference density matrix     :   0.287053135714E-15
+ norm of simple difference density     :   0.248303776301E-03
+ norm of density matrix                :   0.686353199995    
+ total energy                          : -1.1652181429997    
+ one-electron energy                   : -2.5621766117691    
+ two-electron energy                   : 0.63003497470704    
+ energy increment                      :           0.7909E-07
+ damping factor ttr                    :           0.1000    
