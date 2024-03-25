@@ -34,7 +34,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pre-commit>=2.12.1"]
-tests = ["pytest==7.2.2", "pytest-cov==4.0.0", "pytest-mock==3.6.1", "mongomock==4.1.2"]
+tests = ["pytest==7.2.2", "pytest-cov==5.0.0", "pytest-mock==3.6.1", "mongomock==4.1.2"]
 
 [tool.versioningit.vcs]
 method = "git"
