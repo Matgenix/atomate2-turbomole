@@ -1,4 +1,4 @@
-atomate2-lammps Copyright (c) 2022, Matgenix SRL
+atomate2-turbomole Copyright (c) 2024, Matgenix SRL, Toyota Motor Europe SA
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
@@ -11,14 +11,14 @@ list of conditions and the following disclaimer.
 this list of conditions and the following disclaimer in the documentation and/or
 other materials provided with the distribution.
 
-(3) Neither the name of the Matgenix SRL, nor the names of its contributors may
-be used to endorse or promote products derived from this software without
+(3) Neither the name of Matgenix SRL, Toyota Motor Europe SA, nor the names of their contributors
+may be used to endorse or promote products derived from this software without
 specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNERS OR CONTRIBUTORS BE LIABLE FOR
 ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
 (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
 LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
@@ -29,9 +29,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 You are under no obligation whatsoever to provide any bug fixes, patches, or
 upgrades to the features, functionality or performance of the source code
 ("Enhancements") to anyone; however, if you choose to make your Enhancements
-available either publicly, or directly to Matgenix or its contributors, without
-imposing a separate written license agreement for such Enhancements, then you
-hereby grant the following license: a non-exclusive, royalty-free perpetual
+available either publicly, or directly to Matgenix SRL, Toyota Motor Europe SA, or their
+contributors, without imposing a separate written license agreement for such Enhancements,
+then you hereby grant the following license: a non-exclusive, royalty-free perpetual
 license to install, use, modify, prepare derivative works, incorporate into
 other computer software, distribute, and sublicense such enhancements or
 derivative works thereof, in binary and source code form.
