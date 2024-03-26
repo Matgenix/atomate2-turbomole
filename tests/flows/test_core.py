@@ -69,9 +69,6 @@ def test_ScfFlowMaker_yes_prev_output(mnh2_molecule) -> None:
     assert [isinstance(flow.jobs[0], Job)]
     assert flow.jobs[0].name == "dscf"
 
-    # I would like to test
-    # dscf_job.prev_output == 1
-
 
 def test_jobex_flow_maker_001(mockornot_turbomole, h2_molecule):
     maker = JobexFlowMaker.ridft()
@@ -93,11 +90,6 @@ def test_jobex_flow_maker_001(mockornot_turbomole, h2_molecule):
 
     with ScratchDir("."):
         outputs = run_locally(flow, create_folders=True)
-        # pp.pprint(outputs.keys())
-        # pp.pprint(outputs.values())
-        # pp.pprint(outputs[uuids["define"]][1].output)
-        # pp.pprint(outputs[uuids["riper"]][1].output)
-        # pp.pprint(outputs[uuids["dscf"]][1].output)
 
         assert len(outputs) == 3
         assert isinstance(outputs[uuids["define"]][1].output, DefineTaskDocument)
