@@ -67,8 +67,12 @@ class ScfFlowMaker(Maker):
     """
 
     name: str = "Scf Flow Maker"
-    define_maker: DefineMaker = DefineMaker.from_define_template("ridft")
-    scf_maker: Union[DscfMaker, RidftMaker, RiperMaker] = RidftMaker()
+    define_maker: DefineMaker = field(
+        default_factory=lambda: DefineMaker.from_define_template("ridft")
+    )
+    scf_maker: Union[DscfMaker, RidftMaker, RiperMaker] = field(
+        default_factory=lambda: RidftMaker()
+    )
 
     def make(
         self,
