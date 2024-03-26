@@ -34,6 +34,7 @@ jobs:
       run: |
         # Required to generate entity-relationship diagrams for pydantic with erdantic
         sudo apt install graphviz
+        sudo apt install graphviz-dev
 
     - name: Install Python dependencies
       run: |
