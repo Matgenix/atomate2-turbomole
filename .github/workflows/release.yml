@@ -30,12 +30,17 @@ jobs:
       with:
         python-version: '3.11'
 
+    - name: Install graphviz
+      run: |
+        # Required to generate entity-relationship diagrams for pydantic with erdantic
+        sudo apt install graphviz
+
     - name: Install Python dependencies
       run: |
         python -m pip install -U pip
         pip install -U setuptools wheel
         pip install -r requirements/requirements.txt
-        pip install -e .[docs]
+        pip install -e .[docs,docs_erdantic]
 
     - name: Update changelog
       uses: CharMixer/auto-changelog-action@v1

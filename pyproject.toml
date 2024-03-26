@@ -50,7 +50,9 @@ docs = [
     "autodoc_pydantic>=2.0.0",
     "sphinxcontrib-mermaid"
 ]
-
+docs_erdantic = [
+    "autodoc_pydantic[erdantic]>=2.0.0",
+]
 
 [tool.versioningit.vcs]
 method = "git"
