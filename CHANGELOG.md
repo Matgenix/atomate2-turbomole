@@ -1,3 +1,3 @@
 # Changelog
 
-Empty for now
+This is empty
