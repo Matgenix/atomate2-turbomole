@@ -1,15 +1,17 @@
 [
     {
         "job": {
-            "@module": "nagare.custodian_jobs",
-            "@class": "Jobex",
-            "@version": "0.3.0a2",
+            "@module": "atomate2.turbomole.custodian.jobs",
+            "@class": "TMJob",
+            "@version": null,
+            "executable": "jobex",
             "output_file": "jobex.out",
             "stderr_file": "jobex.err",
             "options": [
-                "-time"
-            ],
-            "jobex_time": true
+                "-ri",
+                "-c",
+                "1000"
+            ]
         },
         "corrections": [],
         "handler": null,

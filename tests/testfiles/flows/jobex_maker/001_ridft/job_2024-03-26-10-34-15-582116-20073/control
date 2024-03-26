@@ -2,7 +2,7 @@ $redund_inp
     metric 3
 $coord    file=coord
 $title
-dscf
+ridft
 $symmetry c1
 $user-defined bonds    file=coord
 $optimize
@@ -13,7 +13,8 @@ $optimize
  basis      off
 $atoms
 h  1-2                                                                         \
-   basis =h def-SV(P)
+   basis =h def-SV(P)                                                          \
+   jbas  =h def-SV(P)
 $basis    file=basis
 $scfmo   file=mos
 $closed shells
@@ -51,12 +52,26 @@ $energy    file=energy
 $grad    file=gradient
 $forceapprox    file=forceapprox
 $scfconv   7
+$ricore      500
+$rij
+$jbas    file=auxbasis
 $rundimensions
    natoms=2
    nbf(CAO)=4
    nbf(AO)=4
-$last step     define
+$last step     ridft
 $dft
    functional b-p
    gridsize   m3
+$last SCF energy change = 0.15007329E-10
+$charge from ridft
+          0.000 (not to be modified here)
+$dipole from ridft
+  x     0.00000000000000    y     0.00000000000000    z     0.00000000000035    a.u.
+   | dipole | =    0.0000000000  debye
+$optinfo       file=optinfo
+$hessapprox   file=hessapprox
+$orbital_max_rnorm 0.12660858750294E-06
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En
+-1.169958823918    -2.457367294393     1.292272086831    -.6440849276434    -.4780945411597E-010.6870307654037
 $end

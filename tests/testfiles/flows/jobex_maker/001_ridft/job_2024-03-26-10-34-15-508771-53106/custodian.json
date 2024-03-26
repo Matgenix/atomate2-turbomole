@@ -1,0 +1,20 @@
+[
+    {
+        "job": {
+            "@module": "atomate2.turbomole.custodian.jobs",
+            "@class": "TMJob",
+            "@version": null,
+            "executable": "ridft",
+            "output_file": "ridft.out",
+            "stderr_file": "ridft.err",
+            "options": []
+        },
+        "corrections": [],
+        "handler": null,
+        "validator": null,
+        "max_errors": false,
+        "max_errors_per_job": false,
+        "max_errors_per_handler": false,
+        "nonzero_return_code": false
+    }
+]

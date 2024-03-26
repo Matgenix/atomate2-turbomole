@@ -33,7 +33,7 @@ class TurbomoleDefineInputGenerator(BaseTurbomoleInputGenerator):
         system: MoleculeSystem | PeriodicSystem | Molecule | Structure,
         charge=None,
         unpaired_electrons=None,
-    ) -> DefineInputSet:  # type: ignore
+    ) -> DefineInputSet:
         """
         Generate a DefineInputSet object.
 
@@ -106,7 +106,7 @@ class TurbomoleDefineInputGenerator(BaseTurbomoleInputGenerator):
 class TurbomoleInputGenerator(BaseTurbomoleInputGenerator):
     """A class to generate Turbomole input sets."""
 
-    def get_input_set(self, prev_output=None) -> TurbomoleInputSet:  # type: ignore
+    def get_input_set(self, prev_output=None) -> TurbomoleInputSet:
         """
         Generate a TurbomoleInputSet object.
 
@@ -121,7 +121,7 @@ class TurbomoleInputGenerator(BaseTurbomoleInputGenerator):
 class DscfInputGenerator(TurbomoleInputGenerator):
     """A class to generate Turbomole input sets."""
 
-    def get_input_set(self, prev_output=None) -> TurbomoleInputSet:  # type: ignore
+    def get_input_set(self, prev_output=None) -> TurbomoleInputSet:
         """
         Generate a TurbomoleInputSet object.
 

@@ -1,5 +1,3 @@
-import pprint as pp
-
 import pytest
 from atomate2.turbomole.flows.core import JobexFlowMaker, ScfFlowMaker
 from atomate2.turbomole.jobs.core import JobexMaker
@@ -75,34 +73,37 @@ def test_ScfFlowMaker_yes_prev_output(mnh2_molecule) -> None:
     # dscf_job.prev_output == 1
 
 
-@pytest.mark.skip(reason="missint last scf output in test folder")
+# # @pytest.mark.skip(reason="missint last scf output in test folder")
 def test_jobex_flow_maker_001(mockornot_turbomole, h2_molecule):
-    maker = JobexFlowMaker.riper()
+    maker = JobexFlowMaker.ridft()
     flow = maker.make(h2_molecule)
     uuids = {job.name: job.uuid for job, _ in flow.iterflow()}
-    assert len(flow.jobs) == len(uuids)
+    assert len(flow.jobs) == 2
+    assert len(uuids) == 3
 
-    define_output = "flows/jobex_maker/001_default/job_2021-12-17-12-58-29-924588-80183"
-    riper_output = "flows/jobex_maker/001_default/job_2021-12-17-12-58-29-967033-51736"
+    define_output = "flows/jobex_maker/001_ridft/job_2024-03-26-10-34-15-427047-27808"
+    ridft_output = "flows/jobex_maker/001_ridft/job_2024-03-26-10-34-15-508771-53106"
+    jobex_output = "flows/jobex_maker/001_ridft/job_2024-03-26-10-34-15-582116-20073"
     mockornot_turbomole(
         {
             "define": define_output,
-            "riper": riper_output,
-            # TODO: Missing final "dscf"
+            "ridft": ridft_output,
+            "jobex": jobex_output,
         }
     )
 
     with ScratchDir("."):
         outputs = run_locally(flow, create_folders=True)
-        pp.pprint(outputs.keys())
-        pp.pprint(outputs.values())
-        pp.pprint(outputs[uuids["define"]][1].output)
-        pp.pprint(outputs[uuids["riper"]][1].output)
-        pp.pprint(outputs[uuids["dscf"]][1].output)
+        # pp.pprint(outputs.keys())
+        # pp.pprint(outputs.values())
+        # pp.pprint(outputs[uuids["define"]][1].output)
+        # pp.pprint(outputs[uuids["riper"]][1].output)
+        # pp.pprint(outputs[uuids["dscf"]][1].output)
 
         assert len(outputs) == 3
         assert isinstance(outputs[uuids["define"]][1].output, DefineTaskDocument)
-        assert isinstance(outputs[uuids["riper"]][1].output, TaskDocument)
+        assert isinstance(outputs[uuids["ridft"]][1].output, TaskDocument)
+        assert isinstance(outputs[uuids["jobex"]][1].output, TaskDocument)
 
 
 def test_periodicity(h2_molecule, si_structure) -> None:
