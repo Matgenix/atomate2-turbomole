@@ -12,15 +12,8 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
-import sys
 
 import atomate2.turbomole
-
-# sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(
-    0, os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-)
 
 # -- Project information -----------------------------------------------------
 
@@ -150,7 +143,7 @@ htmlhelp_basename = "atomate2_turbomole_doc"
 # -- Options for intersphinx extension ---------------------------------------
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {"https://docs.python.org/": None}
+intersphinx_mapping = {"python": ("https://docs.python.org/3", None)}
 
 # -- Options for todo extension ----------------------------------------------
 

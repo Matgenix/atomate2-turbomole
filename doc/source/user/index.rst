@@ -4,8 +4,7 @@
 atomate2-turbomole user guide
 #############################
 
-This guide is an overview and explains the important features;
-details are found in :ref:`reference`.
+This guide is an overview and explains the important features.
 
 .. toctree::
    :caption: Getting started

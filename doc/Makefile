@@ -82,4 +82,4 @@ html-build: generate generate-rst-from-md
 	@echo
 	@echo "Build finished. The HTML pages are in build/html."
 api-doc:
-	sphinx-apidoc -e -f -o source/api ../src/atomate2/turbomole
+	sphinx-apidoc --implicit-namespaces -e -f -o source/api ../src/atomate2

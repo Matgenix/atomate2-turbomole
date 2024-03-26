@@ -10,9 +10,7 @@ atomate2-turbomole documentation
 
    User Guide <user/index>
    API reference <api/index>
-   Development <dev/index>
-   Changelog <changelog>
-   release
+   Development <dev/devinstall>
 
 
 **Version**: |version|
@@ -20,9 +18,12 @@ atomate2-turbomole documentation
 Atomate2-turbomole is an add-on package for `atomate2
 <https://github.com/materialsproject/atomate2>`_
 
-Atomate2-turbomole is built to work with Turbomole, and is built on top of open source
-libraries such as [pymatgen], [custodian], [jobflow] and [Turbomoleio]
-
+Atomate2-turbomole is built to work with `Turbomole
+<https://www.turbomole.org/>`_ , and is built on top of open source
+libraries such as `pymatgen <https://github.com/materialsproject/pymatgen>`_,
+`custodian <https://github.com/materialsproject/custodian>`_,
+`jobflow <https://github.com/materialsproject/jobflow>`_ and
+`turbomoleio <https://github.com/Matgenix/turbomoleio>`_.
 
 .. grid:: 1 2 2 2
 

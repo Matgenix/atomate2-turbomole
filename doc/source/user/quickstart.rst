@@ -1,8 +1,8 @@
 .. _quickstart:
 
-=============================
-atomate2-turbomole quickstart
-=============================
+==========
+Quickstart
+==========
 
 After completing the :ref:`install`, it is possible to start executing Turbomole
 workflows.

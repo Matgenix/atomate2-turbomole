@@ -8,7 +8,7 @@ atomate2-turbomole is a free, open-source add-on to `atomate2
 <https://github.com/materialsproject/atomate2>`_, providing workflows for `Turbomole
 <https://www.turbomole.org/>`_ using
 `jobflow <https://materialsproject.github.io/jobflow/>`_. In order to use atomate2-turbomole,
-you must have a Turbomole license (see `jobflow <https://store.turbomole.org/>`_.
+you must have a Turbomole license (see `here <https://store.turbomole.org/>`_).
 
 atomate2-turbomole's functionalities are very similar to those in atomate2. Jobs and
 Flows are generated using Makers. These Makers are serializable, and can thus
