@@ -73,7 +73,6 @@ def test_ScfFlowMaker_yes_prev_output(mnh2_molecule) -> None:
     # dscf_job.prev_output == 1
 
 
-# # @pytest.mark.skip(reason="missint last scf output in test folder")
 def test_jobex_flow_maker_001(mockornot_turbomole, h2_molecule):
     maker = JobexFlowMaker.ridft()
     flow = maker.make(h2_molecule)
