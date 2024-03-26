@@ -50,8 +50,12 @@ class BaseTurbomoleMaker(Maker):
         custodian.run()
 
         # Parse the outputs
+        if self.tm_exec == "jobex":
+            output_file = "job.last"
+        else:
+            output_file = custodian_job.output_file
         doc = TaskDocument.from_directory(
-            ".", output_file=custodian_job.output_file, output_cls=self.output_cls
+            ".", output_file=output_file, output_cls=self.output_cls
         )
 
         return Response(output=doc)

@@ -17,7 +17,7 @@ from turbomoleio.core.control import Control, Energy, Gradient
 from turbomoleio.core.molecule import MoleculeSystem
 from turbomoleio.core.periodic import PeriodicSystem
 from turbomoleio.output.data import RunData
-from turbomoleio.output.files import BaseData, ScfOutput
+from turbomoleio.output.files import BaseData, JobexOutput, ScfOutput
 from turbomoleio.output.states import States
 
 __all__ = [
@@ -137,22 +137,24 @@ class InputSummary(BaseModel):
 class OutputSummary(BaseModel):
     """Summary of the outputs for a Turbomole calculation."""
 
-    structure: Union[Structure, Molecule] = Field(
+    structure: Optional[Union[Structure, Molecule]] = Field(
         None, description="The output structure object"
     )
-    energy: float = Field(
+    energy: Optional[float] = Field(
         None, description="The final total DFT energy for the last calculation"
     )
-    energy_per_atom: float = Field(
+    energy_per_atom: Optional[float] = Field(
         None, description="The final DFT energy per atom for the last calculation"
     )
-    bandgap: float = Field(None, description="The DFT bandgap for the last calculation")
-    cbm: float = Field(None, description="CBM for this calculation")
-    vbm: float = Field(None, description="VBM for this calculation")
-    forces: List[Vector3D] = Field(
+    bandgap: Optional[float] = Field(
+        None, description="The DFT bandgap for the last calculation"
+    )
+    cbm: Optional[float] = Field(None, description="CBM for this calculation")
+    vbm: Optional[float] = Field(None, description="VBM for this calculation")
+    forces: Optional[List[Vector3D]] = Field(
         None, description="Forces on atoms from the last calculation"
     )
-    stress: Matrix3D = Field(
+    stress: Optional[Matrix3D] = Field(
         None, description="Stress on the unit cell from the last calculation"
     )
 
@@ -275,6 +277,7 @@ class TaskDocument(MoleculeMetadata):
         with cd(dir_name):
             control = Control.from_file("control")
             output = output_cls.from_file(output_file)
+            energy_output = output.energy if isinstance(output, JobexOutput) else output
             scf_states = States.from_file("control")
             energies = Energy.from_file()
             try:
@@ -295,7 +298,7 @@ class TaskDocument(MoleculeMetadata):
                     "structure": molecule,
                     "meta_molecule": molecule,
                     "input": InputSummary(
-                        structure=molecule, xc=output.dft.functional.name
+                        structure=molecule, xc=energy_output.dft.functional.name
                     ),
                 }
 
@@ -317,7 +320,7 @@ class TaskDocument(MoleculeMetadata):
                     "periodic should not be present in the control file "
                     "or be one of 1, 2 or 3."
                 )
-            dat["completed_at"] = str(output.run.end_time)
+            dat["completed_at"] = str(energy_output.run.end_time)
             dat["state"] = "successful"
             dat["task_label"] = output_cls.__name__
 
