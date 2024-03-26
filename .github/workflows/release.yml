@@ -15,6 +15,9 @@ jobs:
   publish:
     name: Publish package
     runs-on: ubuntu-latest
+    permissions:
+      # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write
     if: github.repository == 'matgenix/atomate2-turbomole' && startsWith(github.ref, 'refs/tags/v')
 
     steps:
@@ -123,15 +126,20 @@ jobs:
     - name: Publish package to Test PyPI first
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
-        user: __token__
-        password: ${{ secrets.TEST_PYPI_PASSWORD }}
         repository-url: https://test.pypi.org/legacy/
 
-    - name: Publish package to PyPI
-      uses: pypa/gh-action-pypi-publish@release/v1
-      with:
-        user: __token__
-        password: ${{ secrets.PYPI_PASSWORD }}
+#    - name: Publish package to Test PyPI first
+#      uses: pypa/gh-action-pypi-publish@release/v1
+#      with:
+#        user: __token__
+#        password: ${{ secrets.TEST_PYPI_PASSWORD }}
+#        repository-url: https://test.pypi.org/legacy/
+#
+#    - name: Publish package to PyPI
+#      uses: pypa/gh-action-pypi-publish@release/v1
+#      with:
+#        user: __token__
+#        password: ${{ secrets.PYPI_PASSWORD }}
 
   deploy_docs:
     if: github.repository == 'matgenix/atomate2-turbomole' && startsWith(github.ref, 'refs/tags/v')
