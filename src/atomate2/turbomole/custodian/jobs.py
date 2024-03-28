@@ -75,7 +75,7 @@ class TMJob(Job):
         """Create custodian TMJob for jobex."""
         options = kwargs.pop("options", [])
         if isinstance(options, str):
-            options = options = shlex.split(options)
+            options = shlex.split(options)
         if jobex_time and "-time" not in options:
             options.append("-time")
         if not jobex_time and "-time" in options:
