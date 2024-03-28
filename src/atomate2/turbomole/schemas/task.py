@@ -1,13 +1,9 @@
 """Core definition of atomate2-turbomole task document."""
+
 import logging
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Type, TypeVar, Union
 
-from atomate2.turbomole.schemas.calculation import (
-    Calculation,
-    Status,
-)
-from atomate2.turbomole.utils import datetime_str
 from emmet.core.math import Matrix3D, Vector3D
 from emmet.core.structure import MoleculeMetadata
 from monty.os import cd
@@ -19,6 +15,12 @@ from turbomoleio.core.periodic import PeriodicSystem
 from turbomoleio.output.data import RunData
 from turbomoleio.output.files import BaseData, JobexOutput, ScfOutput
 from turbomoleio.output.states import States
+
+from atomate2.turbomole.schemas.calculation import (
+    Calculation,
+    Status,
+)
+from atomate2.turbomole.utils import datetime_str
 
 __all__ = [
     "DefineTaskDocument",
@@ -244,7 +246,7 @@ class TaskDocument(MoleculeMetadata):
         cls: Type[_TD_T],
         dir_name: Union[Path, str],
         output_file: str,
-        additional_fields: Dict[str, Any] = None,
+        additional_fields: Optional[Dict[str, Any]] = None,
         output_cls: BaseData = ScfOutput,
     ) -> _TD_T:
         """

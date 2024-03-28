@@ -4,12 +4,13 @@ from pathlib import Path
 import jobflow
 import numpy as np
 import pytest
-from atomate2.turbomole.jobs.core import DefineMaker, DscfMaker
-from atomate2.turbomole.sets.core import TurbomoleDefineInputGenerator
 from jobflow import run_locally
 from monty.serialization import MontyDecoder, MontyEncoder
 from monty.tempfile import ScratchDir
 from turbomoleio.core.control import Energy
+
+from atomate2.turbomole.jobs.core import DefineMaker, DscfMaker
+from atomate2.turbomole.sets.core import TurbomoleDefineInputGenerator
 
 
 def test_jobs():

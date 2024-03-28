@@ -1,11 +1,12 @@
 import pytest
-from atomate2.turbomole.flows.core import JobexFlowMaker, ScfFlowMaker
-from atomate2.turbomole.jobs.core import JobexMaker
-from atomate2.turbomole.schemas.task import DefineTaskDocument, TaskDocument
 from jobflow import run_locally
 from jobflow.core.flow import Flow
 from jobflow.core.job import Job
 from monty.tempfile import ScratchDir
+
+from atomate2.turbomole.flows.core import JobexFlowMaker, ScfFlowMaker
+from atomate2.turbomole.jobs.core import JobexMaker
+from atomate2.turbomole.schemas.task import DefineTaskDocument, TaskDocument
 
 
 def test_dscf_flow_maker_001(mockornot_turbomole, h2_molecule):
@@ -38,7 +39,7 @@ def test_ScfFlowMaker_no_prev_output(mnh2_molecule, si_structure) -> None:
 
     assert isinstance(dscf_flow, Flow)
     assert len(dscf_flow.jobs) == 2
-    assert all([isinstance(k, Job) for k in dscf_flow.jobs])
+    assert all(isinstance(k, Job) for k in dscf_flow.jobs)
     assert dscf_flow.jobs[0].name == "define"
     assert dscf_flow.jobs[1].name == "dscf"
 
@@ -46,7 +47,7 @@ def test_ScfFlowMaker_no_prev_output(mnh2_molecule, si_structure) -> None:
 
     assert isinstance(ridft_flow, Flow)
     assert len(ridft_flow.jobs) == 2
-    assert all([isinstance(k, Job) for k in ridft_flow.jobs])
+    assert all(isinstance(k, Job) for k in ridft_flow.jobs)
     assert ridft_flow.jobs[0].name == "define"
     assert ridft_flow.jobs[1].name == "ridft"
 
@@ -54,7 +55,7 @@ def test_ScfFlowMaker_no_prev_output(mnh2_molecule, si_structure) -> None:
 
     assert isinstance(riper_flow, Flow)
     assert len(riper_flow.jobs) == 2
-    assert all([isinstance(k, Job) for k in riper_flow.jobs])
+    assert all(isinstance(k, Job) for k in riper_flow.jobs)
     assert riper_flow.jobs[0].name == "define"
     assert riper_flow.jobs[1].name == "riper"
 
@@ -147,7 +148,7 @@ def test_JobexFlowMaker_no_prev_output(mnh2_molecule) -> None:
 
     assert isinstance(jobex_flow, Flow)
     assert len(jobex_flow.jobs) == 2
-    assert all([isinstance(k, Job) for k in jobex_flow.jobs])
+    assert all(isinstance(k, Job) for k in jobex_flow.jobs)
     assert jobex_flow.jobs[0].name == "define"
     assert jobex_flow.jobs[1].name == "jobex"
 

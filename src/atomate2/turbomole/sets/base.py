@@ -1,4 +1,5 @@
 """Module defining base atomate2-turbomole input set and generator."""
+
 import logging
 from dataclasses import dataclass
 

@@ -2,10 +2,11 @@
 
 from typing import Any, Dict, List, Union
 
-from atomate2.turbomole.schemas.calc_types import CalcType, RunType, TaskType
 from jobflow.utils import ValueEnum
 from pydantic import BaseModel, Field
 from pymatgen.core.structure import Molecule, Structure
+
+from atomate2.turbomole.schemas.calc_types import CalcType, RunType, TaskType
 
 
 class Status(ValueEnum):

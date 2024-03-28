@@ -1,6 +1,7 @@
 import pytest
-from atomate2.turbomole.schemas.task import InputSummary, TaskDocument
 from pydantic import ValidationError
+
+from atomate2.turbomole.schemas.task import InputSummary, TaskDocument
 
 
 def test_InputSummary(si_structure) -> None:

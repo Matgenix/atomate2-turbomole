@@ -4,10 +4,11 @@
 
 import subprocess
 
-import atomate2.turbomole.custodian.jobs
 import pytest
-from atomate2.turbomole.custodian.jobs import TMJob
 from monty.tempfile import ScratchDir
+
+import atomate2.turbomole.custodian.jobs
+from atomate2.turbomole.custodian.jobs import TMJob
 
 
 def test_tm_job():

@@ -1,4 +1,5 @@
 """Configuration for Sphinx."""
+
 #
 # Configuration file for the Sphinx documentation builder.
 #

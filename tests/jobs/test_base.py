@@ -1,6 +1,7 @@
+from jobflow.core.job import Job
+
 from atomate2.turbomole.jobs.base import BaseTurbomoleMaker
 from atomate2.turbomole.sets.core import TurbomoleDefineInputGenerator
-from jobflow.core.job import Job
 
 
 def test_base_turbomole_empty_maker():

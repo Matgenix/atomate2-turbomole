@@ -15,6 +15,10 @@ libraries such as [pymatgen](https://github.com/materialsproject/pymatgen),
 [jobflow](https://github.com/materialsproject/jobflow)
 and [turbomoleio](https://github.com/Matgenix/turbomoleio).
 
+Currently, the jobs and flows have been implemented and tested for Turbomole version 7.6 series. The
+atomate2-turbomole thus relies on turbomoleio version 1.4.x which is compatible with Turbomole version
+7.6 series.
+
 ## Need help?
 
 If you've found an issue with atomate2-turbomole, please submit a bug report on [GitHub Issues][issues].

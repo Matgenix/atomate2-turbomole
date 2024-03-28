@@ -1,6 +1,12 @@
 """Definition of core Turbomole flow makers."""
+
 from dataclasses import dataclass, field
 from typing import Optional, Union
+
+from jobflow import Flow, Maker
+from pymatgen.core.structure import Molecule, Structure
+from turbomoleio.core.molecule import MoleculeSystem
+from turbomoleio.core.periodic import PeriodicSystem
 
 from atomate2.turbomole.jobs.core import (
     DefineMaker,
@@ -9,10 +15,6 @@ from atomate2.turbomole.jobs.core import (
     RidftMaker,
     RiperMaker,
 )
-from jobflow import Flow, Maker
-from pymatgen.core.structure import Molecule, Structure
-from turbomoleio.core.molecule import MoleculeSystem
-from turbomoleio.core.periodic import PeriodicSystem
 
 
 def check_periodicity_consistence(

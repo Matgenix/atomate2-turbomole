@@ -5,12 +5,13 @@
 import os
 import shutil
 
+from monty.tempfile import ScratchDir
+
 from atomate2.turbomole.custodian.validators import (
     JobexGeoOptConvergedValidator,
     NormalEndValidator,
     ScfConvergedValidator,
 )
-from monty.tempfile import ScratchDir
 
 
 def test_jbx_validator():

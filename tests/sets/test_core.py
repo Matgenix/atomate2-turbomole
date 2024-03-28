@@ -2,16 +2,17 @@ from pathlib import Path
 
 import numpy as np
 import pytest
+from monty.tempfile import ScratchDir
+from pymatgen.core import Lattice, Molecule, Structure
+from turbomoleio.core.molecule import MoleculeSystem
+from turbomoleio.core.periodic import PeriodicSystem
+
 from atomate2.turbomole.sets.base import DefineInputSet, TurbomoleInputSet
 from atomate2.turbomole.sets.core import (
     DscfInputGenerator,
     TurbomoleDefineInputGenerator,
     TurbomoleInputGenerator,
 )
-from monty.tempfile import ScratchDir
-from pymatgen.core import Lattice, Molecule, Structure
-from turbomoleio.core.molecule import MoleculeSystem
-from turbomoleio.core.periodic import PeriodicSystem
 
 
 # @pytest.mark.skip(reason="I am not sure whether imports are right")

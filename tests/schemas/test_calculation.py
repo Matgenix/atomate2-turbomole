@@ -3,8 +3,9 @@
 """Tests of the schemas calculations in the atomate2-turbomole package."""
 
 import pytest
-from atomate2.turbomole.schemas.calculation import Calculation
 from pydantic import ValidationError
+
+from atomate2.turbomole.schemas.calculation import Calculation
 
 
 def test_Calculation() -> None:
