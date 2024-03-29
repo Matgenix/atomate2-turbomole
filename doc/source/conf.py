@@ -159,3 +159,5 @@ try:
     autodoc_pydantic_model_erdantic_figure = True
 except ImportError:
     autodoc_pydantic_model_erdantic_figure = False
+
+graphviz_output_format = "svg"
