@@ -343,6 +343,6 @@ class TaskDocument(MoleculeMetadata):
         }
         ddict.update(data)
         doc = cls(**ddict)
-        # doc = doc.copy(update=data)
+        doc = doc.copy(update=data)
         doc = doc.copy(update=additional_fields)
         return doc
