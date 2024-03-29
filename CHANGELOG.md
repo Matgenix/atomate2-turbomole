@@ -1,5 +1,16 @@
 # Changelog
 
+## [v0.1.1](https://github.com/Matgenix/atomate2-turbomole/tree/v0.1.1) (2024-03-29)
+
+[Full Changelog](https://github.com/Matgenix/atomate2-turbomole/compare/v0.1...v0.1.1)
+
+**Merged pull requests:**
+
+- Update task.py [\#13](https://github.com/Matgenix/atomate2-turbomole/pull/13) ([davidwaroquiers](https://github.com/davidwaroquiers))
+- Bump codecov/codecov-action from 4.0.1 to 4.1.1 [\#11](https://github.com/Matgenix/atomate2-turbomole/pull/11) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Auto-update pre-commit hooks [\#10](https://github.com/Matgenix/atomate2-turbomole/pull/10) ([github-actions[bot]](https://github.com/apps/github-actions))
+- Bump emmet-core from 0.81.0 to 0.81.1 [\#9](https://github.com/Matgenix/atomate2-turbomole/pull/9) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.1](https://github.com/Matgenix/atomate2-turbomole/tree/v0.1) (2024-03-26)
 
 [Full Changelog](https://github.com/Matgenix/atomate2-turbomole/compare/v0.1a2...v0.1)
