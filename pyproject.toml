@@ -23,13 +23,13 @@ classifiers = [
     "Topic :: Other/Nonlisted Topic",
     "Topic :: Scientific/Engineering",
 ]
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 dependencies = [
     "pymatgen>=2022.2.10",
     "custodian>=2024.3.12",
     "jobflow>=0.1.11",
     "emmet-core>=0.80.0",
-    "turbomoleio==1.4.0"
+    "turbomoleio==1.5.0"
 ]
 
 [project.optional-dependencies]

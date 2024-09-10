@@ -15,9 +15,18 @@ libraries such as [pymatgen](https://github.com/materialsproject/pymatgen),
 [jobflow](https://github.com/materialsproject/jobflow)
 and [turbomoleio](https://github.com/Matgenix/turbomoleio).
 
-Currently, the jobs and flows have been implemented and tested for Turbomole version 7.6 series. The
-atomate2-turbomole thus relies on turbomoleio version 1.4.x which is compatible with Turbomole version
-7.6 series.
+Currently, the jobs and flows have been implemented and tested for Turbomole version 7.6 and 7.7 series. The
+atomate2-turbomole thus relies on the turbomoleio version that is compatible with Turbomole version used.
+For information, hereafter is a table with compatible versions of Turbomole:
+
+| TURBOMOLE version(s) | atomate2-turbomole version(s) | turbomoleio version(s) |
+|:---------------------|:-----------------------------:|-----------------------:|
+| 7.7 series           |         0.2.x series          |           1.5.x series |
+| 7.6 series           |         0.1.x series          |           1.4.x series |
+
+Note that the turbomoleio version is pinned in the atomate2-turbomole version, i.e. if you install a given
+atomate2-turbomole version, the corresponding (compatible) turbomoleio version will be installed. You only
+have to choose which atomate2-turbomole version to use based on the Turbomole release you have.
 
 ## Need help?
 
