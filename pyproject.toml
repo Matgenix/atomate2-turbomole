@@ -30,7 +30,7 @@ dependencies = [
     "jobflow>=0.1.11",
     "emmet-core>=0.80.0",
     "pydantic-settings<2.5",
-    "turbomoleio==1.5.0"
+    "turbomoleio==1.6.0"
 ]
 
 [project.optional-dependencies]

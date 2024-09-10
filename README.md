@@ -21,6 +21,7 @@ For information, hereafter is a table with compatible versions of Turbomole:
 
 | TURBOMOLE version(s) | atomate2-turbomole version(s) | turbomoleio version(s) |
 |:---------------------|:-----------------------------:|-----------------------:|
+| 7.8 series           |         0.3.x series          |           1.6.x series |
 | 7.7 series           |         0.2.x series          |           1.5.x series |
 | 7.6 series           |         0.1.x series          |           1.4.x series |
 
