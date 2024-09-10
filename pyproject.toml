@@ -29,7 +29,7 @@ dependencies = [
     "custodian>=2024.3.12",
     "jobflow>=0.1.11",
     "emmet-core>=0.80.0",
-    "pydantic-settings<2.5",
+    "pydantic-settings<2.6",
     "turbomoleio==1.5.0"
 ]
 
