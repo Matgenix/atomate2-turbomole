@@ -44,10 +44,10 @@ def test_define_maker_001(mockornot_turbomole, h2_molecule):
         coord_path = run_path / "coord"
         assert coord_path.exists()
         with open(coord_path) as f:
-            coord_str_list = f.read().split()
+            coord_lines = f.read().splitlines()
             read_coords = np.empty((2, 3))
-            read_coords[0] = coord_str_list[1:4]
-            read_coords[1] = coord_str_list[5:8]
+            read_coords[0] = coord_lines[1].split()[0:3]
+            read_coords[1] = coord_lines[2].split()[0:3]
             true_coords = np.array(
                 [
                     [0.0, 0.0, -0.69919866611153],
@@ -55,8 +55,8 @@ def test_define_maker_001(mockornot_turbomole, h2_molecule):
                 ]
             )
             assert np.allclose(read_coords, true_coords, 1e-6, 1e-9)
-            assert coord_str_list[4] == "h"
-            assert coord_str_list[8] == "h"
+            assert coord_lines[1].split()[3] == "h"
+            assert coord_lines[2].split()[3] == "h"
         with open(run_path / "control") as f:
             control_string = f.read()
             assert "functional b-p" in control_string
