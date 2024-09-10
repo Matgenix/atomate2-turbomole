@@ -50,9 +50,10 @@ class TMJob(Job):
         """
         cmd = [self.executable, *self.options]
 
-        with open(self.output_file, "w") as f_out, open(
-            self.stderr_file, "w", buffering=1
-        ) as f_err:
+        with (
+            open(self.output_file, "w") as f_out,
+            open(self.stderr_file, "w", buffering=1) as f_err,
+        ):
             p = subprocess.Popen(cmd, stdout=f_out, stderr=f_err)
         return p
 
