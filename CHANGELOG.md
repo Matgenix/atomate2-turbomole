@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.3](https://github.com/Matgenix/atomate2-turbomole/tree/v0.3) (2024-09-12)
+
+[Full Changelog](https://github.com/Matgenix/atomate2-turbomole/compare/v0.3rc1...v0.3)
+
 ## [v0.3rc1](https://github.com/Matgenix/atomate2-turbomole/tree/v0.3rc1) (2024-09-12)
 
 [Full Changelog](https://github.com/Matgenix/atomate2-turbomole/compare/v0.2...v0.3rc1)
