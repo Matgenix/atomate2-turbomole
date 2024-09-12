@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.3rc1](https://github.com/Matgenix/atomate2-turbomole/tree/v0.3rc1) (2024-09-12)
+
+[Full Changelog](https://github.com/Matgenix/atomate2-turbomole/compare/v0.2...v0.3rc1)
+
+**Merged pull requests:**
+
+- Updates to allow usage of Turbomole 7.8 [\#57](https://github.com/Matgenix/atomate2-turbomole/pull/57) ([davidwaroquiers](https://github.com/davidwaroquiers))
+
 ## [v0.2](https://github.com/Matgenix/atomate2-turbomole/tree/v0.2) (2024-09-10)
 
 [Full Changelog](https://github.com/Matgenix/atomate2-turbomole/compare/v0.2rc1...v0.2)
