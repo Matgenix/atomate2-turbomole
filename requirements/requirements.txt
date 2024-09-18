@@ -1,4 +1,4 @@
-pymatgen==2024.9.10
+pymatgen==2024.9.17.1
 custodian==2024.6.24
 jobflow==0.1.18
 emmet-core==0.84.2rc7
