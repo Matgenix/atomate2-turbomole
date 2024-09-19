@@ -1,5 +1,5 @@
 pymatgen==2024.9.10
 custodian==2024.6.24
 jobflow==0.1.18
-emmet-core==0.84.2rc7
+emmet-core==0.84.2rc10
 turbomoleio==1.6.0
